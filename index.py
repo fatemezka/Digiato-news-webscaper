@@ -12,10 +12,12 @@ news_description_tags = []
 for i in range(page_count):
     url = digiato_url + "/page/" + str(i + 1)
     response = requests.get(url)
-    result = BeautifulSoup(response.text, "html.parser")
-    news_title_tags += result.find_all(["a"], class_="rowCard__title")
-    news_description_tags += result.find_all(
-        ["p"], class_="rowCard__description")
+
+    if response.status_code == 200:
+        result = BeautifulSoup(response.text, "html.parser")
+        news_title_tags += result.find_all(["a"], class_="rowCard__title")
+        news_description_tags += result.find_all(
+            ["p"], class_="rowCard__description")
 
 
 if (
