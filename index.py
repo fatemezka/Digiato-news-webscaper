@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-import re
 import csv
 
 digiato_url = "https://digiato.com/daily-timeline"
