@@ -26,3 +26,7 @@ To run this project
 
 - if you want to change number of news you can change the value of *page_count* in the code.
 - if you want to change the csv file name or path you can change the *file_path* variable.
+
+
+## Sample Data Table
+<img width="1196" alt="Screenshot 1402-11-18 at 1 21 43 in the afternoon" src="https://github.com/fatemezka/digiato-news-webscaper/assets/77573694/c086668d-f28e-4411-8012-ef03c0d4ee87">
